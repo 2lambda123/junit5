@@ -12,7 +12,7 @@ runs:
     - uses: ./.github/actions/run-gradle
       with:
         arguments: ${{ inputs.arguments }}
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       if: ${{ always() }}
       with:
         name: Test Distribution trace files (${{ github.job }})
